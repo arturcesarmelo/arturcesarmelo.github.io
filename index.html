@@ -1,31 +1,124 @@
 <!DOCTYPE html>
-<html lang="pt" ng-app="tapp">
+<html lang="pt" ng-app="cv">
   <head>
     <meta charset="utf-8">
     <title>Artur Cear | Fulltack Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/plugins/chartist/chartist.min.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body ng-app="aloMundo" ng-cloak>
-      <md-toolbar class="md-warn">
-         <div class="md-toolbar-tools">
-            <h2 class="md-flex">Alô Mundo Angular Material</h2>
-         </div>
-      </md-toolbar>
-      <md-content flex layout-padding>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </md-content>
-   </body>
-   <script src="node_modules/angular/angular.js"></script>
-   <script src="node_modules/angular-animate/angular-animate.js"></script>
-   <script src="node_modules/angular-aria/angular-aria.js"></script>
-   <script src="node_modules/angular-messages/angular-messages.js"></script>
-   <script src="node_modules/angular-material/angular-material.js"></script>
-   <script type="text/javascript">
-        angular.module('tapp', ['ngMaterial'])
+  <body>
+    <div class="row" ng-controller="greedingsCtrl">
+        <div class="widget-head-color-box navy-bg p-lg text-center" style="margin-top: 0px; border-radius: 0px">
+            <div class="m-b-md">
+            <h2 class="font-bold no-margins">
+                {{name}}
+            </h2>
+                <small>{{ocupation}}</small>
+            </div>
+            <img src="img/a4.jpg" class="img-circle circle-border m-b-md" alt="profile">
 
-        .controller('tuttiCtrl', function($scope){
+            <div class="">
+              <span>{{aboutMe.age}} anos</span> |
+              <span>{{aboutMe.nationality}}</span> |
+              <span>{{aboutMe.civilState}}</span>
+            </div>
 
-        });
-   </script>
+            <div style="padding-top:15px">
+                <a href="https://www.facebook.com/arturcesar.melo" target="_blank"><i class="fa fa-facebook-square fa-2x"  style="color: #2F4050"></i></a>
+                <a href="https://www.linkedin.com/in/artur-cesar-de-melo-3a67a5115?trk=hp-identity-name" target="_blank"><i class="fa fa-linkedin-square fa-2x" style="color: #2F4050"></i></a>
+            </div>
+        </div>
+  </div>
+
+  <!-- card fomacao -->
+  <div class="col-md-12" style="padding-top:15px">
+
+    <div class="col-md-4">
+
+      <div class="ibox-content" style="min-height: 255px">
+          <h2>Formação</h2>
+          <small></small>
+          <ul class="sortable-list connectList agile-list ui-sortable">
+
+            <li class="warning-element ui-sortable-handle" id="task1">
+              <h3>  Bacharelado em Sistema de Informação</h3>
+                <div class="agile-detail">
+                    <h4 style="font-weight: normal"><i class="fa fa-university"></i> Universidade Federal de Alagoas</h4>
+                </div>
+            </li>
+        </ul>
+      </div>
+
+      <div class="clearfix">&nbsp;</div>
+
+      <div class="ibox-content" style="min-height: 255px">
+          <h2>Habilidades</h2>
+          <div class="ct-chart ct-perfect-fourth"></div>
+      </div>
+
+      <div class="clearfix">&nbsp;</div>
+
+      <div class="ibox-content"  style="padding-top:15px; min-height: 341px" ng-controller="contactCtrl">
+          <h2>Contato</h2>
+          <p><i class="fa fa-map-marker fa-fw"  style="font-size: 18px; margin-left: 7px; margin-right:7px"></i> {{address}}</p>
+          <br>
+          <p><i class="fa fa-mobile fa-2x fa-fw"></i> {{phoneNumber}}</p>
+          <p><i class="fa fa-envelope fa-fw" style="font-size: 16px; margin-left: 7px; margin-right:7px"></i> {{ email }} </p>
+          <img src="https://maps.googleapis.com/maps/api/staticmap?center=-9.6374396,-35.7050653&zoom=17&size=370x130&maptype=roadmap
+&markers=color:red%7Clabel:C%7C-9.6374396,-35.7050653&key=AIzaSyBhQrMdkwItRJlk63m_uplTIW0aoxd-u2Q" alt="">
+      </div>
+    </div>
+
+    <!-- card timeline -->
+    <div class="col-md-8">
+        <div ng-include="'sections/timeline.html'"></div>
+    </div>
+
+    <div class="clearfix">&nbsp;</div>
+
+    <div class="footer">
+
+        <div>
+            <strong>Copyright</strong> arturcesarmelo &copy; 2014-2017
+        </div>
+
+    </div>
+
+  </div>
+    <!-- AngularJS -->
+    <script src="js/angular.min.js" charset="utf-8"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="js/plugins/chartist/chartist.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+    <script type="text/javascript">
+    new Chartist.Bar('.ct-chart', {
+      labels: ['PHP', 'Laravel', 'Phalcon', 'Java', 'Doctrine','AngularJS', 'VueJS','jQuery'],
+      series: [
+        [8.5, 7.5, 6, 5.5, 6.5, 8.0, 8.0,8.5],
+      ]
+    }, {
+      seriesBarDistance: 10,
+      reverseData: true,
+      horizontalBars: true,
+      axisY: {
+        offset: 70
+      }
+    });
+    </script>
+  </body>
 </html>

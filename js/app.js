@@ -15,7 +15,7 @@ angular.module('cv', [])
       {
         name:"Mam.bo",
         tecnologies:"PHP, VueJS , MySQL, Laravel",
-        ocupation:"Desenvolvedor Full-Stack pleno.",
+        ocupation:"Desenvolvedor PHP Full-Stack pleno.",
         description:"Desenvolvedor Full-Stack",
         url:"http://mam.bo/",
         date:{

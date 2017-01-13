@@ -2,9 +2,9 @@ angular.module('cv', [])
 
 .controller('greedingsCtrl', function($scope){
     $scope.name = "Artur Cesar de Melo";
-    $scope.ocupation = "Desenvolvedor PHP Full-Stack";
+    $scope.ocupation = "Desenvolvedor PHP Full-Stack ";
     $scope.aboutMe = {
-      age:27,
+      age:26,
       nationality: "Brasileiro",
       civilState: "Casado"
     };

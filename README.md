@@ -1,6 +1,6 @@
 # arturcesarmelo.github.io
 
-Full-Stack Developer, code and tecnology lover and a retired gamer.
+Full-Stack Developer, code and technology lover and a retired gamer.
 
 ## Languages which i use to program
 

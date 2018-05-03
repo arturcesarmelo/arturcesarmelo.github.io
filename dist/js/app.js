@@ -19,26 +19,28 @@ app.controller('chartCtrl', function($scope) {
   $scope.labels = [
       'JavaScript',
       'PHP',
+      'Ruby',
       'Laravel',
       'Cake',
       'Symfony',
-      'Java',
+      'Rails',
       'Angular',
       'VueJS'
     ];
   
-    $scope.series = ['Series A'];
+    $scope.series = ['Percent of knowledge'];
 
     $scope.data = [
         [
-          80,
-          90,
-          85,
-          70,
-          75,
-          55,
-          80,
-          80
+          81, // JavaScript
+          91, // PHP
+          75, // Ruby
+          93, // Laravel
+          74, // Cake
+          75, // Symfony
+          75, // Rails
+          92, // Angular
+          85  // VueJS
         ]
     ];
 })
@@ -58,6 +60,7 @@ app.controller('englishCtrl', function($scope, ageService, mapsService){
 
     $scope.academy = {
       header: 'Escolarity',
+      course: 'Bachelor Degree in Information Sistem',
       name: 'Feredal University of Alagoas',
       status: {
         text: 'In progress'
@@ -154,6 +157,7 @@ app.controller('portugeseCtrl', function($scope, ageService, mapsService){
 
     $scope.academy = {
       header: 'Formação',
+      course: 'Bacharelado em Sistema de Informação',
       name: 'Universidade Federal de Alagoas',
       status: {
         text: 'Em andamento'

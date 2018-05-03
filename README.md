@@ -2,13 +2,13 @@
 
 Full-Stack Developer, code and technology lover and a retired gamer.
 
-## Languages which i use to program
+## Languages
 
 **php**
 ```
 - Laravel
 - Symphony
-- Phalcon
+- Cake
 ```
 
 **JavaScript**
@@ -21,6 +21,7 @@ Full-Stack Developer, code and technology lover and a retired gamer.
 ```
 - MySQL
 - Postgres
+- MSSQL
 ```
 
 

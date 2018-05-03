@@ -14,6 +14,7 @@ app.controller('englishCtrl', function($scope, ageService, mapsService){
 
     $scope.academy = {
       header: 'Escolarity',
+      course: 'Bachelor Degree in Information Sistem',
       name: 'Feredal University of Alagoas',
       status: {
         text: 'In progress'

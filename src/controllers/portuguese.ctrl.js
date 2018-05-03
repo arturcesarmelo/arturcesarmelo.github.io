@@ -14,6 +14,7 @@ app.controller('portugeseCtrl', function($scope, ageService, mapsService){
 
     $scope.academy = {
       header: 'Formação',
+      course: 'Bacharelado em Sistema de Informação',
       name: 'Universidade Federal de Alagoas',
       status: {
         text: 'Em andamento'

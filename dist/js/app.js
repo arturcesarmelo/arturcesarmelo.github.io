@@ -32,15 +32,15 @@ app.controller('chartCtrl', function($scope) {
 
     $scope.data = [
         [
-          81, // JavaScript
-          91, // PHP
+          87.5, // JavaScript
+          90, // PHP
           75, // Ruby
-          93, // Laravel
+          90, // Laravel
           74, // Cake
-          75, // Symfony
+          75.5, // Symfony
           75, // Rails
-          92, // Angular
-          85  // VueJS
+          87.5, // Angular
+          87.5  // VueJS
         ]
     ];
 })

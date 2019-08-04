@@ -7,6 +7,9 @@
     "type": "git",
     "url": "git+https://github.com/arturcesarmelo/arturcesarmelo.github.io.git"
   },
+  "scripts": {
+    "build": "gulp"
+  },
   "author": "tutticesar",
   "license": "ISC",
   "homepage": "https://github.com/arturcesarmelo/arturcesarmelo.github.io#readme",

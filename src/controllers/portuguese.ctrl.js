@@ -40,11 +40,11 @@ app.controller('portugeseCtrl', function($scope, ageService, mapsService){
 
     $scope.employments = [
       {
-        name:"Bluevox",
-        tecnologies:"PHP, VueJS , PostgresQL, PLSQL, Laravel",
-        ocupation:"Desenvolvedor PHP Full-Stack Sênior.",
-        description:"Desenvolvedor Full-Stack",
-        url:"https://bluevox.com.br/",
+        name:"Mesha",
+        tecnologies:"Laravel, NodeJS, C# (.NET Core), VueJS, PostgresQL, PLSQL, Sql Server",
+        ocupation:"Analista Desenvolvedor Sênior.",
+        description:"Analista Desenvolvedor",
+        url:"https://mesha.co/",
         date:{
           beginYear: '2017',
           endYear: 'Atualmente',

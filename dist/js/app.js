@@ -18,8 +18,8 @@ app.config(function($stateProvider, $urlRouterProvider) {
 app.controller('chartCtrl', function($scope) {
   $scope.labels = [
       'Laravel',
-      'NodeJS',
-      'C#',
+      'AdonisJS',
+      'C# (.NET Core)',
       'Angular',
       'VueJS',
       'React'
@@ -30,7 +30,7 @@ app.controller('chartCtrl', function($scope) {
     $scope.data = [
         [
           90, // Laravel
-          75, // NodeJS
+          75, // AdonisJS
           75, // C#
           85,  // Angular
           90,  // VueJS

@@ -50,7 +50,7 @@ gulp.task('angular', function() {
 
 
 gulp.task('styles', function() {
-	return gulp.src(deps.css)
+	return gulp.src(deps.css, {allowEmpty: true})
 	.pipe(concat('app.css'))
 	.pipe(gulp.dest('./dist/css/'));
 });
@@ -60,10 +60,6 @@ gulp.task('fonts', function() {
 	.pipe(gulp.dest('./dist/fonts/'));
 });
 
-gulp.task('default', ['scripts', 'angular', 'styles', 'fonts'], function() {
-	gulp.watch(['src/**/*.js', 'src/**/*.css'], function() {
-		// run styles upon changes
-		gulp.run('angular');
-		gulp.run('styles');		
-	});
-});
+gulp.task('default', gulp.series('scripts', 'angular', 'styles', 'fonts'));
+
+gulp.watch(['src/**/*.js', 'src/**/*.css'], gulp.series('angular', 'styles'));

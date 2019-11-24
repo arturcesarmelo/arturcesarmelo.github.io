@@ -10,6 +10,12 @@ Full-Stack Developer, code and technology lover and a retired gamer.
 - Symphony
 - Cake
 ```
+**NodeJS**
+```
+- Express
+- Knex
+- AdonisJS
+```
 
 **JavaScript**
 ```
@@ -23,7 +29,6 @@ Full-Stack Developer, code and technology lover and a retired gamer.
 - Postgres
 - MSSQL
 ```
-
 
 
 

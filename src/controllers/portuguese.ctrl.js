@@ -39,6 +39,19 @@ app.controller('portugeseCtrl', function($scope, ageService, mapsService){
     }
 
     $scope.employments = [
+     {
+        name:"Rede Vistorias",
+        tecnologies:"Python, PHP, Microservices, Docker, REST",
+        ocupation:"Desenvolvedor backend Pleno",
+        description:"Desenvolvedor backend Pleno",
+        url:"https://redevistorias.com.br/",
+        date:{
+          beginYear: '2020',
+          endYear: 'Atualmente',
+          beginMonth: 'Julho',
+          endMonth: ''
+        }
+      },
       {
         name:"Mesha",
         tecnologies:"Laravel, NodeJS, C# (.NET Core), VueJS, PostgresQL, PLSQL, Sql Server",
@@ -47,9 +60,9 @@ app.controller('portugeseCtrl', function($scope, ageService, mapsService){
         url:"https://mesha.co/",
         date:{
           beginYear: '2017',
-          endYear: 'Atualmente',
-          beginMonth: 'October',
-          endMonth: ''
+          endYear: '2020',
+          beginMonth: 'Outubro',
+          endMonth: 'Maio'
         }
       },
       {

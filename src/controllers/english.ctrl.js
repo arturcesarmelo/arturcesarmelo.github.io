@@ -40,16 +40,29 @@ app.controller('englishCtrl', function($scope, ageService, mapsService){
 
     $scope.employments = [
       {
+        name:"Rede Vistorias",
+        tecnologies:"Python, PHP, Microservices, Docker, REST",
+        ocupation:"Plenum backend developer",
+        description:"Plenum backend developer",
+        url:"https://redevistorias.com.br/",
+        date:{
+          beginYear: '2020',
+          endYear: 'Atualmente',
+          beginMonth: 'Julho',
+          endMonth: ''
+        }
+      },
+      {
         name:"Mesha",
         tecnologies:"Laravel, NodeJS, C# (.NET Core), VueJS, PostgresQL, PLSQL, Sql Server",
         ocupation:"Sênior Developer and Analist",
-        description:"Full-Stack Developer",
+        description:"Mesha is a company which deals with consulting. Also it has a product to deliver administration solutions for odontological clinics. Here i worked in both segments with PHP and Node.",
         url:"https://mesha.co/",
         date:{
           beginYear: '2017',
-          endYear: 'Current date',
-          beginMonth: 'October',
-          endMonth: ''
+          endYear: '2020',
+          beginMonth: 'Outubro',
+          endMonth: 'Julho'
         }
       },
       {
